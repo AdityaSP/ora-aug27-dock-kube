@@ -1,0 +1,439 @@
+    1  id
+    2  docker container ls
+    3  docker container ls | grep -v k8s
+    4  docker
+    5  docker ps
+    6  docker container ls | grep -v k8s
+    7  docker container ls | grep -v k8s
+    8  docker container ls | grep -v k8s
+    9  docker container ls | grep -v k8s
+   10  docker container run nginx
+   11  docker image rm nginx
+   12  docker image rm -f nginx
+   13  docker container run nginx
+   14  docker container run nginx
+   15  docker container run -d nginx
+   16  docker container ls | grep -v k8s
+   17  docker container ls -a | grep -v k8s
+   18  docker container stop 1d58
+   19  docker container ls | grep -v k8s
+   20  docker container ls -a | grep -v k8s
+   21  docker container start elated_babbage
+   22  docker container ls | grep -v k8s
+   23  docker container ls -a | grep -v k8s
+   24  docker container rm 3d7e07b71acc
+   25  docker container rm 1d58aa66a089
+   26  docker container prune
+   27  clear
+   28  docker container ls | grep -v k8s
+   29  docker container inspect 1d58aa66a089
+   30  docker container inspect 1d58aa66a089 | grep -i ipaddress
+   31  curl 172.17.0.19
+   32  docker container inspect 1d58aa66a089 | grep -i ipaddress
+   33  ifconfig
+   34  docker container ls | grep -v k8s
+   35  docker container rm -f 1d58aa66a089
+   36  docker container run -d --publish 8081:80 nginx
+   37  docker container ls | grep -v k8s
+   38  docker container inspect e1e48e156c0e | grep -i ipaddress
+   39  curl 172.17.0.19:80
+   40  localhost:8081
+   41* curl localhost:
+   42  docker container ls
+   43  docker container inspect e1e48e156c0e | grep -i ipaddress
+   44  docker container ls | grep -v k8s
+   45  docker container ls | grep -v k8s
+   46  docker container exec -it e1e48e156c0e sh
+   47  docker container stop e1e48
+   48  docker container start e1e48
+   49  docker container rm -f e1e48
+   50  docker container prune
+   51  docker container run alpine
+   52  docker container ls | grep -v k8s
+   53  docker container ls -a | grep -v k8s
+   54  docker container run alpine ping google.com
+   55  docker container run alpine ping -c 5 google.com
+   56  docker container run -d alpine ping -c 5 google.com
+   57  docker container logs 5c8577
+   58* 
+   59  docker container run -it alpine ping
+   60  docker container run -it alpine
+   61  docker container run -d alpine ping  google.com
+   62  docker container exec -it 68840 bash
+   63  docker container exec -it 68840 sh
+   64  ps -ef | grep ping
+   65  ps -ef | grep 20822
+   66  history | tail -n 20
+   67  docker image ls
+   68  docker image ls | grep alpine
+   69  docker image ls | grep nginx
+   70  docker image pull nginx
+   71  docker container ls
+   72  docker container ls | grep -v k8s
+   73  docker container exec -it 68840cb91fb6 sh
+   74  #docker container exec -it 68840cb91fb6 sh
+   75  docker container ls -a | grep -v k8s
+   76  docker container stop 68840cb91fb6
+   77  docker commit 68840cb91fb6 alpine_apache
+   78  docker container run -d alpine_apache
+   79  docker container ls | grep -v k8s
+   80  docker container run nginx
+   81  docker container run -d nginx
+   82  docker container ls | grep -v k8s
+   83  docker container run -d -p 9091:80 alpine_apache httpd -D FOREGROUND
+   84  docker container ls | grep -v k8s
+   85  docker container run -d -p 9091:80 alpine_apache httpd -D FOREGROUND
+   86  clear
+   87  ls -ltra
+   88  clear
+   89  docker container run -d --publish 8081:80 nginx
+   90  docker container ls | grep -v k8s
+   91  docker images ls | grep alpine_apache
+   92  docker image ls | grep alpine_apache
+   93  docker image ls | grep alpine_apache
+   94  docker image pull nginx:latest
+   95  docker image pull nginx:1.15
+   96  docker image ls | grep nginx
+   97  docker image pull nginx:1
+   98  docker image rm nginx:1
+   99  docker image pull nginx:alpine
+  100  docker image pull nginx:1.14
+  101  cd /var/
+  102  cd lib/docker
+  103  ls
+  104  cd image
+  105  ls
+  106  cd overlay2/
+  107  ls
+  108  cd imagedb
+  109  ls
+  110  cd content/
+  111  ls
+  112  cd sha256/
+  113  ls
+  114  cd ..
+  115  cd
+  116  docker image ls | grep nginx
+  117  docker image ls | grep alpine_apache
+  118  docker image push alpine_apache
+  119  #docker image push adityaprahbakara/alpine_apache:latest
+  120  docker image tag alpine_apache adityaprabhakara/alpine_apache
+  121  docker login
+  122  docker image push adityaprabhakara/alpine_apache
+  123  docker image push adityaprabhakara/alpine_apache
+  124  docker image push adityaprabhakara/alpine_apache
+  125  docker image tag adityaprabhakara/alpine_apache adityaprabhakara/alpine_apache:1.1
+  126  docker image push adityaprabhakara/alpine_apache:1.1
+  127  docker image rm adityaprahbakara/alpine_apache
+  128  docker image rm adityaprabhakara/alpine_apache
+  129  docker image rm adityaprabhakara/alpine_apache:1.1
+  130  docker image pull adityaprahbakara/alpine_apache:1.1
+  131  docker image pull adityaprabhakara/alpine_apache:1.1
+  132  docker image rm alpine_apache adityaprabhakara/alpine_apache:1.1
+  133  #docker image rm alpine_apache adityaprabhakara/alpine_apache:1.1
+  134  docker container ls | grep -v k8s
+  135  docker container rm -f e1571cdd85fe 0c684d246695 1e11db59058f b067d5cbc51e
+  136  docker container prune
+  137  #docker image rm alpine_apache adityaprabhakara/alpine_apache:1.1
+  138  docker image rm alpine_apache adityaprabhakara/alpine_apache:1.1
+  139  docker image ls | grep alpine_apache
+  140  docker image pull adityaprabhakara/alpine_apache:1.1
+  141  docker image ls | grep alpine_apache
+  142  docker image ls
+  143  ps -ef | grep docker | grep container
+  144  ping google.com
+  145  ping google.com
+  146  #docker image tag alpine_apache adityaprabhakara/alpine_apache
+  147  #docker image push adityaprabhakara/alpine_apache
+  148* 
+  149  clear
+  150  ls
+  151  export PS1='$PWD \n>'
+  152  mkdir alpine_apache
+  153  cd alpine_apache/
+  154  vi Dockerfile
+  155  vi Dockerfile 
+  156  ls
+  157  vi Dockerfile 
+  158  docker image inspect alpine
+  159  docker inspect image nginx:alpine
+  160  docker inspect image alpine_apache
+  161  docker inspect image adityaprabhakara/alpine_apache
+  162  docker image ls | grep alpine
+  163  docker image inspect adityaprabhakara/alpine_apache
+  164  docker image ls | grep alpine
+  165  docker image inspect adityaprabhakara/alpine_apache:1.1
+  166  docker image history alpine
+  167  docker image history alpine
+  168  docker image history alpine
+  169  docker image history alpine
+  170  docker image history alpine
+  171  docker image history nginx:alpine
+  172  vi Dockerfile 
+  173  docker build -t alpine_apache -f Dockerfile .
+  174  cat Dockerfile 
+  175  docker image history alpine_apache
+  176  docker build -t alpine_apache -f Dockerfile .
+  177  cat Dockerfile 
+  178  vi Dockerfile 
+  179  cat Dockerfile 
+  180  docker build -t alpine_apache -f Dockerfile .
+  181  vi Dockerfile 
+  182  docker image ls
+  183  docker image ls -a
+  184  vi D2
+  185  docker build -t toremove -f D2 .
+  186  vi D2
+  187  docker build -t toremove -f D2 .
+  188  docker image rm -f toremove
+  189  rm D2
+  190  ls
+  191  vi Dockerfile 
+  192  docker image purne
+  193  docker image prune
+  194  docker build -t alpine_apache -f Dockerfile .
+  195  vi Dockerfile 
+  196  docker build -t alpine_apache -f Dockerfile .
+  197  vi Dockerfile 
+  198* 
+  199  docker image history alpine_apache
+  200  docker container ls | grep -v k8s
+  201  docker container run -d -p 8080:80 --name web01 alpine_apache
+  202  docker container ls | grep -v k8s
+  203  cat Dockerfile 
+  204  docker image ls | grep alpine
+  205  cat Dockerfile 
+  206  docker image history alpine_apache
+  207  docker image history nginx
+  208  cat Dockerfile 
+  209  cd ..
+  210  mkdir app
+  211  cd app/
+  212  ls
+  213  git
+  214  vi mycode.html
+  215  cat mycode.html 
+  216  vi Dockerfile
+  217  ls
+  218  cat Dockerfile 
+  219  cat mycode.html 
+  220  docker image ls
+  221  docker build -t app -t app:1.1 .
+  222  docker container run -d -p 8081:80 --name web02 app
+  223  cd ..
+  224  ls
+  225  cat alpine_apache/Dockerfile 
+  226  cat app/mycode.html 
+  227  cat app/Dockerfile 
+  228  docker container ls | grep -v k8s
+  229  cd app/
+  230  ls
+  231  vi Dockerfile 
+  232  #docker run alpine env
+  233  env
+  234  docker container run --rm alpine env
+  235  docker container run --rm -e MYOWN=Helloalpine env
+  236  docker container run --rm -e MYOWN=Hello alpine env
+  237  vi Dockerfile 
+  238  docker build -t app -t app:2.1 .
+  239  docker image history app:2.1
+  240  docker container run -d -p 8083:80 --name web03 app
+  241  docker container run -d -p 8084:9090 -e APACHE_PORT=9090 --name web04 app
+  242  cat Dockerfile 
+  243  docker container inspect web04 | grep -i ipaddress
+  244  curl "172.17.0.22":9090
+  245  cd ..
+  246  docker image ls | grep mysql
+  247  docker-machine
+  248  base=https://github.com/docker/machine/releases/download/v0.14.0 &&   curl -L $base/docker-machine-$(uname -s)-$(uname -m) >/tmp/docker-machine &&   sudo install /tmp/docker-machine /usr/local/bin/docker-machine
+  249  clear
+  250  ls
+  251  mkdir pinger
+  252  cd pinger/
+  253  vi Dockerfile
+  254  cat Dockerfile 
+  255  docker image build -t pinger -t pinger:1 .
+  256  docker container run -d --rm pinger
+  257  docker container run  --rm pinger
+  258  docker container run  --rm pinger
+  259  docker container run  --rm pinger ping -c 4 yahoo.com
+  260  docker image history pinger
+  261  docker image inspect pinger
+  262  ls
+  263  vi Dockerfile 
+  264  docker image history nginx
+  265  docker image inspect nginx
+  266  cat Dockerfile 
+  267  docker image build -t pinger -t pinger:2 .
+  268  docker container run  --rm pinger
+  269  docker container run  --rm pinger yahoo.com
+  270  cat Dockerfile 
+  271  #docker image build -t pinger -t pinger:2 .
+  272  #docker container run  --rm pinger yahoo.com
+  273* docker image history
+  274  #docker container run  --rm pinger
+  275  docker container run  --rm pinger
+  276  docker container run  --rm pinger
+  277  docker --help
+  278  docker container --help
+  279  docker container run --help
+  280  #docker image pull mysql:5.7
+  281  docker image ls | grep mysql
+  282  docker image save --help
+  283  docker image save -o mysql.tar mysql:5.7
+  284  ls
+  285  docker image load --help
+  286  docker container run mysql:5.7
+  287  docker container run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:5.7
+  288  docker container ls | grep -v k8s
+  289  docker container rm -f 7f36fb3ce682 282c0c5f00db 3cf499a399e0 5ecd1e0e76c5
+  290  vi Dockerfile 
+  291  cd ..
+  292  ls
+  293  cd app
+  294  ls
+  295  vi Dockerfile 
+  296  vi docker-entrypoint.sh
+  297  ls
+  298  vi Dockerfile 
+  299  cat Dockerfile 
+  300  cat docker-entrypoint.sh 
+  301  vi Dockerfile 
+  302  docker container run --rm alpine env
+  303  vi Dockerfile 
+  304  ls -lre
+  305  ls -ltr
+  306  cat Dockerfile 
+  307  cat docker-entrypoint.sh 
+  308  docker build -t app -t app:3.1 .
+  309  docker container run -d -p 8084:9090 -e APACHE_PORT=9090 --name web04 app
+  310  docker container logs web04
+  311  vi docker-entrypoint.sh 
+  312  docker image history app
+  313  docker container run -it --entrypoint /bin/sh app sh
+  314  docker container run -it --entrypoint /bin/sh app
+  315  vi Dockerfile 
+  316  docker container run -d -p 8085:9090 -e APACHE_PORT=9090 --name web05 app
+  317  docker container logs web05
+  318  i#docker container run -it --entrypoint /bin/sh app
+  319  vi docker-entrypoint.sh 
+  320  vi Dockerfile 
+  321  docker build -t app -t app:3.1 .
+  322  vi Dockerfile 
+  323  docker image history app
+  324  docker container rm web05
+  325  docker container run -d -p 8085:9090 -e APACHE_PORT=9090 --name web05 app
+  326  docker container logs web05
+  327  vi Dockerfile 
+  328  ls
+  329  docker build --help | cache
+  330* 
+  331  docker build -t app -t app:3.1 --no-cache .
+  332  docker container rm web05
+  333  docker container run -d -p 8085:9090 -e APACHE_PORT=9090 --name web05 app
+  334  docker container logs web05
+  335  vi Dockerfile 
+  336  vi Dockerfile 
+  337  vi docker-entrypoint.sh 
+  338  #docker build -t app -t app:3.1 --no-cache .
+  339  cat docker-entrypoint.sh 
+  340  cat Dockerfile 
+  341  #docker container run -d -p 8085:9090 -e APACHE_PORT=9090 --name web05 app
+  342  vi Dockerfile 
+  343  docker container exec web05 ls /var/log/apache2
+  344  vi Dockerfile 
+  345  docker build -t app -t app:4.1 --no-cache .
+  346  cat Dockerfile 
+  347  docker container run -d -p 8086:9090 -e APACHE_PORT=9090 --name web06 app
+  348  docker container logs
+  349  docker container logs web06
+  350  docker container logs web06
+  351  docker container exec web06 ls /var/log/apache2
+  352  cat Dockerfile 
+  353  #docker build -t app -t app:4.1 --no-cache .
+  354  #docker container run -d -p 8086:9090 -e APACHE_PORT=9090 --name web06 app
+  355  docker container logs web06
+  356  docker container logs web06
+  357  docker container run web06 ls /var/www/localhost/htdocs
+  358  docker container exec web06 ls /var/www/localhost/htdocs
+  359  docker container logs web06
+  360  #docker container run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true mysql:5.7
+  361  docker container ls | grep mysql
+  362  docker container exec -it confident_bartik bash
+  363  docker container exec -it confident_bartik mysql -uroot
+  364  docker container exec -it confident_bartik bash
+  365  docker volume prune
+  366  docker container inspect confident_bartik
+  367  cd /var/lib/docker/volumes/a1967c9a6486f2a7905f667ebdcd6abdc4c99f90753649a11405f917059b06aa/_data/
+  368  ls
+  369  #docker container run -d -p 8086:9090 -e APACHE_PORT=9090 --name web06 app
+  370  docker container rm web06
+  371  docker container rm -f web06
+  372* 
+  373  cd "/c/Users/Dell lap/docker-kuber/aug27/app"
+  374  docker container run -d -p 8086:9090 -e APACHE_PORT=9090 -v /var/log/apache2 --name web06 app
+  375  docker container inspect web06
+  376  cd "/var/lib/docker/volumes/c1bb586531abcdea964d9f04d937c7840f9433ed56e55e9b9e5459623d3d9cb4/_data"
+  377  ls
+  378  #docker container run -d -p 8086:9090 -e APACHE_PORT=9090 -v /var/log/apache2 --name web06 app
+  379  cd -
+  380  docker container exec -it confident_bartik mysql -uroot --execute "show databases;"
+  381  docker container rm -f confident_bartik
+  382  cd "/var/lib/docker/volumes/a1967c9a6486f2a7905f667ebdcd6abdc4c99f90753649a11405f917059b06aa/_data"
+  383  ls
+  384  cd -
+  385  docker container run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true --name myds mysql:5.7
+  386  docker container inspect myds
+  387  docker container rm -f  myds
+  388  docker container run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v myds_db:/var/lib/mysql --name myds mysql:5.7
+  389  docker container inspect myds
+  390  docker container exec -it myds mysql -uroot
+  391  docker container rm -f  myds
+  392  cd "/var/lib/docker/volumes/myds_db/_data"
+  393  ls
+  394  docker container run -d -e MYSQL_ALLOW_EMPTY_PASSWORD=true -v myds_db:/var/lib/mysql --name myds2 mysql:5.7
+  395  docker container exec -it myds2 mysql -uroot --execute "show databases;"
+  396  history | tail -n 20
+  397* 
+  398  docker container inspect myds3
+  399  #docker container run -d -p 8086:9090 -e APACHE_PORT=9090 -v /var --name web06 app
+  400  #docker container run -d -p 8086:9090 -e APACHE_PORT=9090 -v /tmp/data:/var/www/localhost/htdocs --name web06 app
+  401  cd /tmp/
+  402  ls
+  403  cd mydata
+  404  ls
+  405  cd /tmp/
+  406  cd "/c/Users/Dell lap/docker-kuber/aug27/app"
+  407  ls
+  408  ls
+  409  mkdir code
+  410  cp mycode.html code
+  411  i#docker container run -d -p 8086:9090 -e APACHE_PORT=9090 -v /tmp/data:/var/www/localhost/htdocs --name web06 app
+  412  cat Dockerfile 
+  413  docker container ls | grep mysql
+  414  coker container rm -f a5e7d1796799 1308585a760b 
+  415  docker container rm -f a5e7d1796799 1308585a760b 
+  416  docker container ls | grep mysql
+  417  ls
+  418  cat Dockerfile 
+  419  docker container run -d -p 8087:9090 -e APACHE_PORT=9090 -v "/c/Users/Dell lap/docker-kuber/aug27/app/code":/var/www/localhost/htdocs:rw --name web07 app
+  420  docker container ls web07
+  421  docker container logs web07
+  422  docker image prune --help
+  423  docker volume ls
+  424  docker volume prune
+  425  docker volume ls
+  426  docker volume inspect 1ab785077cac0f549e3994b60a20596d26498a8047b6d0bfa64ac339151594a9
+  427  docker container run --name w1 nginx
+  428  docker container run -d --name w1 nginx:alpine
+  429  docker container run -d --name w2 nginx:alpine
+  430  docker container run -d --name w3 nginx:alpine
+  431  docker container inspect w2 | grep -i ipaddress
+  432  docker container inspect w3 | grep -i ipaddress
+  433  docker container exec w2 ping -c 4 w3
+  434  docker container exec w2 echo $HOSTNAME
+  435  docker container exec w2 hostname
+  436  docker container exec w3 hostname
+  437  docker container exec w2 ping -c 4 92b3cf637906
+  438  docker container exec w2 ping -c 4 "172.17.0.24"
+  439  history > history.txt
